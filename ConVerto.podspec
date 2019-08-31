@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ConVerto"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "ConVerto is an easy to use measurement conversion tool."
 
   # This description is used to generate tags and improve search results.
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   s.author             = { "Stephen Martinez" => "enharmonicnuance@gmail.com" }
   # Or just: s.author    = "Stephen Martinez"
   # s.authors            = { "Stephen Martinez" => "enharmonicnuance@gmail.com" }
-  s.social_media_url   = "https://twitter.com/3ENUANCE"
+  s.social_media_url   = "https://twitter.com/0xENuance"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/enuance/ConVerto.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/enuance/ConVerto.git", :tag => "1.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -131,7 +131,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-  
-  s.swift_version = "4.1"
+
+  s.swift_version = "5.0"
 
 end
