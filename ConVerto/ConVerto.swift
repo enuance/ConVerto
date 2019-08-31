@@ -1009,13 +1009,13 @@ extension Float {
 
 public extension Measurement {
     
-    public init(value: CGFloat, unit: UnitType) {self.init(value: Double(value), unit: unit)}
+    init(value: CGFloat, unit: UnitType) {self.init(value: Double(value), unit: unit)}
     
     ///The value component of the Measurement expressed as a type CGFloat
-    public var cgValue: CGFloat {return CGFloat(value)}
+    var cgValue: CGFloat {return CGFloat(value)}
     
     ///The value component of the Measurement expressed as a type Float
-    public var fltValue: Float {return Float(value)}
+    var fltValue: Float {return Float(value)}
     
 }
 
@@ -1023,560 +1023,560 @@ public extension Measurement {
 
 public extension Measurement where UnitType: UnitLength {
     
-    public var toMegameters: Measurement<UnitLength> {
+    var toMegameters: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .megameters)}
     
-    public var toKilometers: Measurement<UnitLength> {
+    var toKilometers: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .kilometers)}
     
-    public var toHectometers: Measurement<UnitLength> {
+    var toHectometers: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .hectometers)}
     
-    public var toDecameters: Measurement<UnitLength> {
+    var toDecameters: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .decameters)}
     
-    public var toMeters: Measurement<UnitLength> {
+    var toMeters: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .meters)}
     
-    public var toDecimeters: Measurement<UnitLength> {
+    var toDecimeters: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .decimeters)}
     
-    public var toCentimeters: Measurement<UnitLength> {
+    var toCentimeters: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .centimeters)}
     
-    public var toMillimeters: Measurement<UnitLength> {
+    var toMillimeters: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .millimeters)}
     
-    public var toMicrometers: Measurement<UnitLength> {
+    var toMicrometers: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .micrometers)}
     
-    public var toNanometers: Measurement<UnitLength> {
+    var toNanometers: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .nanometers)}
     
-    public  var toPicometers: Measurement<UnitLength> {
+    var toPicometers: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .picometers)}
     
-    public var toInches: Measurement<UnitLength> {
+    var toInches: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .inches)}
     
-    public var toFeet: Measurement<UnitLength> {
+    var toFeet: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .feet)}
     
-    public var toYards: Measurement<UnitLength> {
+    var toYards: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .yards)}
     
-    public var toMiles: Measurement<UnitLength> {
+    var toMiles: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .miles)}
     
-    public var toScandinavianMiles: Measurement<UnitLength> {
+    var toScandinavianMiles: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .scandinavianMiles)}
     
-    public var toLightyears: Measurement<UnitLength> {
+    var toLightyears: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .lightyears)}
     
-    public var toNauticalMiles: Measurement<UnitLength> {
+    var toNauticalMiles: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .nauticalMiles)}
     
-    public var toFathoms: Measurement<UnitLength> {
+    var toFathoms: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .fathoms)}
     
-    public var toFurlongs: Measurement<UnitLength> {
+    var toFurlongs: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .furlongs)}
     
-    public var toAstronomicalUnits: Measurement<UnitLength> {
+    var toAstronomicalUnits: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .astronomicalUnits)}
     
-    public var toParsecs: Measurement<UnitLength> {
+    var toParsecs: Measurement<UnitLength> {
         let mySelf = self as! Measurement<UnitLength>; return mySelf.converted(to: .parsecs)}
     
 }
 
 public extension Measurement where UnitType: UnitAngle {
     
-    public var toDegrees: Measurement<UnitAngle> {
+    var toDegrees: Measurement<UnitAngle> {
         let mySelf = self as! Measurement<UnitAngle>; return mySelf.converted(to: .degrees)}
     
-    public var toArcMinutes: Measurement<UnitAngle> {
+    var toArcMinutes: Measurement<UnitAngle> {
         let mySelf = self as! Measurement<UnitAngle>; return mySelf.converted(to: .arcMinutes)}
     
-    public var toArcSeconds: Measurement<UnitAngle> {
+    var toArcSeconds: Measurement<UnitAngle> {
         let mySelf = self as! Measurement<UnitAngle>; return mySelf.converted(to: .arcSeconds)}
     
-    public var toRadians: Measurement<UnitAngle> {
+    var toRadians: Measurement<UnitAngle> {
         let mySelf = self as! Measurement<UnitAngle>; return mySelf.converted(to: .radians)}
     
-    public var toGradians: Measurement<UnitAngle> {
+    var toGradians: Measurement<UnitAngle> {
         let mySelf = self as! Measurement<UnitAngle>; return mySelf.converted(to: .gradians)}
     
-    public var toRevolutions: Measurement<UnitAngle> {
+    var toRevolutions: Measurement<UnitAngle> {
         let mySelf = self as! Measurement<UnitAngle>; return mySelf.converted(to: .revolutions)}
     
 }
 
 public extension Measurement where UnitType: UnitArea {
     
-    public var toSquareMegameters: Measurement<UnitArea> {
+    var toSquareMegameters: Measurement<UnitArea> {
         let mySelf = self as! Measurement<UnitArea>; return mySelf.converted(to: .squareMegameters)}
     
-    public var toSquareKilometers: Measurement<UnitArea> {
+    var toSquareKilometers: Measurement<UnitArea> {
         let mySelf = self as! Measurement<UnitArea>; return mySelf.converted(to: .squareKilometers)}
     
-    public var toSquareMeters: Measurement<UnitArea> {
+    var toSquareMeters: Measurement<UnitArea> {
         let mySelf = self as! Measurement<UnitArea>; return mySelf.converted(to: .squareMeters)}
     
-    public var toSquareCentimeters: Measurement<UnitArea> {
+    var toSquareCentimeters: Measurement<UnitArea> {
         let mySelf = self as! Measurement<UnitArea>; return mySelf.converted(to: .squareCentimeters)}
     
-    public var toSquareMillimeters: Measurement<UnitArea> {
+    var toSquareMillimeters: Measurement<UnitArea> {
         let mySelf = self as! Measurement<UnitArea>; return mySelf.converted(to: .squareMillimeters)}
     
-    public var toSquareMicrometers: Measurement<UnitArea> {
+    var toSquareMicrometers: Measurement<UnitArea> {
         let mySelf = self as! Measurement<UnitArea>; return mySelf.converted(to: .squareMicrometers)}
     
-    public var toSquareNanometers: Measurement<UnitArea> {
+    var toSquareNanometers: Measurement<UnitArea> {
         let mySelf = self as! Measurement<UnitArea>; return mySelf.converted(to: .squareNanometers)}
     
-    public var toSquareInches: Measurement<UnitArea> {
+    var toSquareInches: Measurement<UnitArea> {
         let mySelf = self as! Measurement<UnitArea>; return mySelf.converted(to: .squareInches)}
     
-    public var toSquareFeet: Measurement<UnitArea> {
+    var toSquareFeet: Measurement<UnitArea> {
         let mySelf = self as! Measurement<UnitArea>; return mySelf.converted(to: .squareFeet)}
     
-    public var toSquareYards: Measurement<UnitArea> {
+    var toSquareYards: Measurement<UnitArea> {
         let mySelf = self as! Measurement<UnitArea>; return mySelf.converted(to: .squareYards)}
     
-    public var toSquareMiles: Measurement<UnitArea> {
+    var toSquareMiles: Measurement<UnitArea> {
         let mySelf = self as! Measurement<UnitArea>; return mySelf.converted(to: .squareMiles)}
     
-    public var toAcres: Measurement<UnitArea> {
+    var toAcres: Measurement<UnitArea> {
         let mySelf = self as! Measurement<UnitArea>; return mySelf.converted(to: .acres)}
     
-    public var toAres: Measurement<UnitArea> {
+    var toAres: Measurement<UnitArea> {
         let mySelf = self as! Measurement<UnitArea>; return mySelf.converted(to: .ares)}
     
-    public var toHectares: Measurement<UnitArea> {
+    var toHectares: Measurement<UnitArea> {
         let mySelf = self as! Measurement<UnitArea>; return mySelf.converted(to: .hectares)}
     
 }
 
 public extension Measurement where UnitType: UnitPressure {
     
-    public var toNewtonsPerMetersSquared: Measurement<UnitPressure> {
+    var toNewtonsPerMetersSquared: Measurement<UnitPressure> {
         let mySelf = self as! Measurement<UnitPressure>; return mySelf.converted(to: .newtonsPerMetersSquared)}
     
-    public var toGigapascals: Measurement<UnitPressure> {
+    var toGigapascals: Measurement<UnitPressure> {
         let mySelf = self as! Measurement<UnitPressure>; return mySelf.converted(to: .gigapascals)}
     
-    public var toMegapascals: Measurement<UnitPressure> {
+    var toMegapascals: Measurement<UnitPressure> {
         let mySelf = self as! Measurement<UnitPressure>; return mySelf.converted(to: .megapascals)}
     
-    public var toKilopascals: Measurement<UnitPressure> {
+    var toKilopascals: Measurement<UnitPressure> {
         let mySelf = self as! Measurement<UnitPressure>; return mySelf.converted(to: .kilopascals)}
     
-    public var toHectopascals: Measurement<UnitPressure> {
+    var toHectopascals: Measurement<UnitPressure> {
         let mySelf = self as! Measurement<UnitPressure>; return mySelf.converted(to: .hectopascals)}
     
-    public var toInchesOfMercury: Measurement<UnitPressure> {
+    var toInchesOfMercury: Measurement<UnitPressure> {
         let mySelf = self as! Measurement<UnitPressure>; return mySelf.converted(to: .inchesOfMercury)}
     
-    public var toBars: Measurement<UnitPressure> {
+    var toBars: Measurement<UnitPressure> {
         let mySelf = self as! Measurement<UnitPressure>; return mySelf.converted(to: .bars)}
     
-    public var toMillibars: Measurement<UnitPressure> {
+    var toMillibars: Measurement<UnitPressure> {
         let mySelf = self as! Measurement<UnitPressure>; return mySelf.converted(to: .millibars)}
     
-    public var toMillimetersOfMercury: Measurement<UnitPressure> {
+    var toMillimetersOfMercury: Measurement<UnitPressure> {
         let mySelf = self as! Measurement<UnitPressure>; return mySelf.converted(to: .millimetersOfMercury)}
     
-    public var toPoundsForcePerSquareInch: Measurement<UnitPressure> {
+    var toPoundsForcePerSquareInch: Measurement<UnitPressure> {
         let mySelf = self as! Measurement<UnitPressure>; return mySelf.converted(to: .poundsForcePerSquareInch)}
     
 }
 
 public extension Measurement where UnitType: UnitVolume {
     
-    public var toMegaliters: Measurement<UnitVolume> {
+    var toMegaliters: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .megaliters)}
     
-    public var toKiloliters: Measurement<UnitVolume> {
+    var toKiloliters: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .kiloliters)}
     
-    public var toLiters: Measurement<UnitVolume> {
+    var toLiters: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .liters)}
     
-    public var toDeciliters: Measurement<UnitVolume> {
+    var toDeciliters: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .deciliters)}
     
-    public var toCentiliters: Measurement<UnitVolume> {
+    var toCentiliters: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .centiliters)}
     
-    public var toMilliliters: Measurement<UnitVolume> {
+    var toMilliliters: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .milliliters)}
     
-    public var toCubicKilometers: Measurement<UnitVolume> {
+    var toCubicKilometers: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .cubicKilometers)}
     
-    public var toCubicMeters: Measurement<UnitVolume> {
+    var toCubicMeters: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .cubicMeters)}
     
-    public var toCubicDecimeters: Measurement<UnitVolume> {
+    var toCubicDecimeters: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .cubicDecimeters)}
     
-    public var toCubicCentimeters: Measurement<UnitVolume> {
+    var toCubicCentimeters: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .cubicCentimeters)}
     
-    public var toCubicMillimeters: Measurement<UnitVolume> {
+    var toCubicMillimeters: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .cubicMillimeters)}
     
-    public var toCubicInches: Measurement<UnitVolume> {
+    var toCubicInches: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .cubicInches)}
     
-    public var toCubicFeet: Measurement<UnitVolume> {
+    var toCubicFeet: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .cubicFeet)}
     
-    public var toCubicYards: Measurement<UnitVolume> {
+    var toCubicYards: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .cubicYards)}
     
-    public var toCubicMiles: Measurement<UnitVolume> {
+    var toCubicMiles: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .cubicMiles)}
     
-    public var toAcreFeet: Measurement<UnitVolume> {
+    var toAcreFeet: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .acreFeet)}
     
-    public var toBushels: Measurement<UnitVolume> {
+    var toBushels: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .bushels)}
     
-    public var toTeaspoons: Measurement<UnitVolume> {
+    var toTeaspoons: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .teaspoons)}
     
-    public var toTablespoons: Measurement<UnitVolume> {
+    var toTablespoons: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .tablespoons)}
     
-    public var toFluidOunces: Measurement<UnitVolume> {
+    var toFluidOunces: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .fluidOunces)}
     
-    public var toCups: Measurement<UnitVolume> {
+    var toCups: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .cups)}
     
-    public var toPints: Measurement<UnitVolume> {
+    var toPints: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .pints)}
     
-    public var toQuarts: Measurement<UnitVolume> {
+    var toQuarts: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .quarts)}
     
-    public var toGallons: Measurement<UnitVolume> {
+    var toGallons: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .gallons)}
     
-    public var toImperialTeaspoons: Measurement<UnitVolume> {
+    var toImperialTeaspoons: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .imperialTeaspoons)}
     
-    public var toImperialTablespoons: Measurement<UnitVolume> {
+    var toImperialTablespoons: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .imperialTablespoons)}
     
-    public var toImperialFluidOunces: Measurement<UnitVolume> {
+    var toImperialFluidOunces: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .imperialFluidOunces)}
     
-    public var toImperialPints: Measurement<UnitVolume> {
+    var toImperialPints: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .imperialPints)}
     
-    public var toImperialQuarts: Measurement<UnitVolume> {
+    var toImperialQuarts: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .imperialQuarts)}
     
-    public var toImperialGallons: Measurement<UnitVolume> {
+    var toImperialGallons: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .imperialGallons)}
     
-    public var toMetricCups: Measurement<UnitVolume> {
+    var toMetricCups: Measurement<UnitVolume> {
         let mySelf = self as! Measurement<UnitVolume>; return mySelf.converted(to: .metricCups)}
 }
 
 public extension Measurement where UnitType: UnitDispersion {
     
-    public var toPartsPerMillion: Measurement<UnitDispersion> {
+    var toPartsPerMillion: Measurement<UnitDispersion> {
         let mySelf = self as! Measurement<UnitDispersion>; return mySelf.converted(to: .partsPerMillion)}
     
 }
 
 public extension Measurement where UnitType: UnitConcentrationMass {
     
-    public var toGramsPerLiter: Measurement<UnitConcentrationMass> {
+    var toGramsPerLiter: Measurement<UnitConcentrationMass> {
         let mySelf = self as! Measurement<UnitConcentrationMass>; return mySelf.converted(to: .gramsPerLiter)}
     
-    public var toMilligramsPerDeciliter: Measurement<UnitConcentrationMass> {
+    var toMilligramsPerDeciliter: Measurement<UnitConcentrationMass> {
         let mySelf = self as! Measurement<UnitConcentrationMass>; return mySelf.converted(to: .milligramsPerDeciliter)}
 }
 
 public extension Measurement where UnitType: UnitMass {
     
-    public var toKilograms: Measurement<UnitMass> {
+    var toKilograms: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .kilograms)}
     
-    public var toGrams: Measurement<UnitMass> {
+    var toGrams: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .grams)}
     
-    public var toDecigrams: Measurement<UnitMass> {
+    var toDecigrams: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .decigrams)}
     
-    public var toCentigrams: Measurement<UnitMass> {
+    var toCentigrams: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .centigrams)}
     
-    public var toMilligrams: Measurement<UnitMass> {
+    var toMilligrams: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .milligrams)}
     
-    public var toMicrograms: Measurement<UnitMass> {
+    var toMicrograms: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .micrograms)}
     
-    public var toNanograms: Measurement<UnitMass> {
+    var toNanograms: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .nanograms)}
     
-    public var toPicograms: Measurement<UnitMass> {
+    var toPicograms: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .picograms)}
     
-    public var toOunces: Measurement<UnitMass> {
+    var toOunces: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .ounces)}
     
-    public var toPounds: Measurement<UnitMass> {
+    var toPounds: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .pounds)}
     
-    public var toStones: Measurement<UnitMass> {
+    var toStones: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .stones)}
     
-    public var toMetricTons: Measurement<UnitMass> {
+    var toMetricTons: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .metricTons)}
     
-    public var toShortTons: Measurement<UnitMass> {
+    var toShortTons: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .shortTons)}
     
-    public var toCarats: Measurement<UnitMass> {
+    var toCarats: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .carats)}
     
-    public var toOuncesTroy: Measurement<UnitMass> {
+    var toOuncesTroy: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .ouncesTroy)}
     
-    public var toSlugs: Measurement<UnitMass> {
+    var toSlugs: Measurement<UnitMass> {
         let mySelf = self as! Measurement<UnitMass>; return mySelf.converted(to: .slugs)}
 }
 
 public extension Measurement where UnitType: UnitDuration {
     
-    public var toSeconds: Measurement<UnitDuration> {
+    var toSeconds: Measurement<UnitDuration> {
         let mySelf = self as! Measurement<UnitDuration>; return mySelf.converted(to: .seconds)}
     
-    public var toMinutes: Measurement<UnitDuration> {
+    var toMinutes: Measurement<UnitDuration> {
         let mySelf = self as! Measurement<UnitDuration>; return mySelf.converted(to: .minutes)}
     
-    public var toHours: Measurement<UnitDuration> {
+    var toHours: Measurement<UnitDuration> {
         let mySelf = self as! Measurement<UnitDuration>; return mySelf.converted(to: .hours)}
 }
 
 public extension Measurement where UnitType: UnitAcceleration {
     
-    public var toMetersPerSecondSquared: Measurement<UnitAcceleration> {
+    var toMetersPerSecondSquared: Measurement<UnitAcceleration> {
         let mySelf = self as! Measurement<UnitAcceleration>; return mySelf.converted(to: .metersPerSecondSquared)}
     
-    public var toGravity: Measurement<UnitAcceleration> {
+    var toGravity: Measurement<UnitAcceleration> {
         let mySelf = self as! Measurement<UnitAcceleration>; return mySelf.converted(to: .gravity)}
 }
 
 public extension Measurement where UnitType: UnitSpeed {
     
-    public var toMetersPerSecond: Measurement<UnitSpeed> {
+    var toMetersPerSecond: Measurement<UnitSpeed> {
         let mySelf = self as! Measurement<UnitSpeed>; return mySelf.converted(to: .metersPerSecond)}
     
-    public var toKilometersPerHour: Measurement<UnitSpeed> {
+    var toKilometersPerHour: Measurement<UnitSpeed> {
         let mySelf = self as! Measurement<UnitSpeed>; return mySelf.converted(to: .kilometersPerHour)}
     
-    public var toMilesPerHour: Measurement<UnitSpeed> {
+    var toMilesPerHour: Measurement<UnitSpeed> {
         let mySelf = self as! Measurement<UnitSpeed>; return mySelf.converted(to: .milesPerHour)}
     
-    public var toKnots: Measurement<UnitSpeed> {
+    var toKnots: Measurement<UnitSpeed> {
         let mySelf = self as! Measurement<UnitSpeed>; return mySelf.converted(to: .knots)}
     
 }
 
 public extension Measurement where UnitType: UnitIlluminance {
     
-    public var toLux: Measurement<UnitIlluminance> {
+    var toLux: Measurement<UnitIlluminance> {
         let mySelf = self as! Measurement<UnitIlluminance>; return mySelf.converted(to: .lux)}
 }
 
 public extension Measurement where UnitType: UnitTemperature {
     
-    public var toKelvin: Measurement<UnitTemperature> {
+    var toKelvin: Measurement<UnitTemperature> {
         let mySelf = self as! Measurement<UnitTemperature>; return mySelf.converted(to: .kelvin)}
     
-    public var toCelsius: Measurement<UnitTemperature> {
+    var toCelsius: Measurement<UnitTemperature> {
         let mySelf = self as! Measurement<UnitTemperature>; return mySelf.converted(to: .celsius)}
     
-    public var toFahrenheit: Measurement<UnitTemperature> {
+    var toFahrenheit: Measurement<UnitTemperature> {
         let mySelf = self as! Measurement<UnitTemperature>; return mySelf.converted(to: .fahrenheit)}
 }
 
 public extension Measurement where UnitType: UnitFuelEfficiency {
     
-    public var toLitersPer100Kilometers: Measurement<UnitFuelEfficiency> {
+    var toLitersPer100Kilometers: Measurement<UnitFuelEfficiency> {
         let mySelf = self as! Measurement<UnitFuelEfficiency>; return mySelf.converted(to: .litersPer100Kilometers)}
     
-    public var toMilesPerImperialGallon: Measurement<UnitFuelEfficiency> {
+    var toMilesPerImperialGallon: Measurement<UnitFuelEfficiency> {
         let mySelf = self as! Measurement<UnitFuelEfficiency>; return mySelf.converted(to: .milesPerImperialGallon)}
     
-    public var toMilesPerGallon: Measurement<UnitFuelEfficiency> {
+    var toMilesPerGallon: Measurement<UnitFuelEfficiency> {
         let mySelf = self as! Measurement<UnitFuelEfficiency>; return mySelf.converted(to: .milesPerGallon)}
 }
 
 public extension Measurement where UnitType: UnitEnergy {
     
-    public var toKilojoules: Measurement<UnitEnergy> {
+    var toKilojoules: Measurement<UnitEnergy> {
         let mySelf = self as! Measurement<UnitEnergy>; return mySelf.converted(to: .kilojoules)}
     
-    public var toJoules: Measurement<UnitEnergy> {
+    var toJoules: Measurement<UnitEnergy> {
         let mySelf = self as! Measurement<UnitEnergy>; return mySelf.converted(to: .joules)}
     
-    public var toKilocalories: Measurement<UnitEnergy> {
+    var toKilocalories: Measurement<UnitEnergy> {
         let mySelf = self as! Measurement<UnitEnergy>; return mySelf.converted(to: .kilocalories)}
     
-    public var toCalories: Measurement<UnitEnergy> {
+    var toCalories: Measurement<UnitEnergy> {
         let mySelf = self as! Measurement<UnitEnergy>; return mySelf.converted(to: .calories)}
     
-    public var toKilowattHours: Measurement<UnitEnergy> {
+    var toKilowattHours: Measurement<UnitEnergy> {
         let mySelf = self as! Measurement<UnitEnergy>; return mySelf.converted(to: .kilowattHours)}
 }
 
 public extension Measurement where UnitType: UnitFrequency {
     
-    public var toTerahertz: Measurement<UnitFrequency> {
+    var toTerahertz: Measurement<UnitFrequency> {
         let mySelf = self as! Measurement<UnitFrequency>; return mySelf.converted(to: .terahertz)}
     
-    public var toGigahertz: Measurement<UnitFrequency> {
+    var toGigahertz: Measurement<UnitFrequency> {
         let mySelf = self as! Measurement<UnitFrequency>; return mySelf.converted(to: .gigahertz)}
     
-    public var toMegahertz: Measurement<UnitFrequency> {
+    var toMegahertz: Measurement<UnitFrequency> {
         let mySelf = self as! Measurement<UnitFrequency>; return mySelf.converted(to: .megahertz)}
     
-    public var toKilohertz: Measurement<UnitFrequency> {
+    var toKilohertz: Measurement<UnitFrequency> {
         let mySelf = self as! Measurement<UnitFrequency>; return mySelf.converted(to: .kilohertz)}
     
-    public var toHertz: Measurement<UnitFrequency> {
+    var toHertz: Measurement<UnitFrequency> {
         let mySelf = self as! Measurement<UnitFrequency>; return mySelf.converted(to: .hertz)}
     
-    public var toMillihertz: Measurement<UnitFrequency> {
+    var toMillihertz: Measurement<UnitFrequency> {
         let mySelf = self as! Measurement<UnitFrequency>; return mySelf.converted(to: .millihertz)}
     
-    public var toMicrohertz: Measurement<UnitFrequency> {
+    var toMicrohertz: Measurement<UnitFrequency> {
         let mySelf = self as! Measurement<UnitFrequency>; return mySelf.converted(to: .microhertz)}
     
-    public var toNanohertz: Measurement<UnitFrequency> {
+    var toNanohertz: Measurement<UnitFrequency> {
         let mySelf = self as! Measurement<UnitFrequency>; return mySelf.converted(to: .nanohertz)}
 }
 
 public extension Measurement where UnitType: UnitElectricCurrent {
     
-    public var toMegaamperes: Measurement<UnitElectricCurrent> {
+    var toMegaamperes: Measurement<UnitElectricCurrent> {
         let mySelf = self as! Measurement<UnitElectricCurrent>; return mySelf.converted(to: .megaamperes)}
     
-    public var toKiloamperes: Measurement<UnitElectricCurrent> {
+    var toKiloamperes: Measurement<UnitElectricCurrent> {
         let mySelf = self as! Measurement<UnitElectricCurrent>; return mySelf.converted(to: .kiloamperes)}
     
-    public var toAmperes: Measurement<UnitElectricCurrent> {
+    var toAmperes: Measurement<UnitElectricCurrent> {
         let mySelf = self as! Measurement<UnitElectricCurrent>; return mySelf.converted(to: .amperes)}
     
-    public var toMilliamperes: Measurement<UnitElectricCurrent> {
+    var toMilliamperes: Measurement<UnitElectricCurrent> {
         let mySelf = self as! Measurement<UnitElectricCurrent>; return mySelf.converted(to: .milliamperes)}
     
-    public var toMicroamperes: Measurement<UnitElectricCurrent> {
+    var toMicroamperes: Measurement<UnitElectricCurrent> {
         let mySelf = self as! Measurement<UnitElectricCurrent>; return mySelf.converted(to: .microamperes)}
 }
 
 public extension Measurement where UnitType: UnitElectricResistance {
     
-    public var toMegaohms: Measurement<UnitElectricResistance> {
+    var toMegaohms: Measurement<UnitElectricResistance> {
         let mySelf = self as! Measurement<UnitElectricResistance>; return mySelf.converted(to: .megaohms)}
     
-    public var toKiloohms: Measurement<UnitElectricResistance> {
+    var toKiloohms: Measurement<UnitElectricResistance> {
         let mySelf = self as! Measurement<UnitElectricResistance>; return mySelf.converted(to: .kiloohms)}
     
-    public var toOhms: Measurement<UnitElectricResistance> {
+    var toOhms: Measurement<UnitElectricResistance> {
         let mySelf = self as! Measurement<UnitElectricResistance>; return mySelf.converted(to: .ohms)}
     
-    public var toMilliohms: Measurement<UnitElectricResistance> {
+    var toMilliohms: Measurement<UnitElectricResistance> {
         let mySelf = self as! Measurement<UnitElectricResistance>; return mySelf.converted(to: .milliohms)}
     
-    public var toMicroohms: Measurement<UnitElectricResistance> {
+    var toMicroohms: Measurement<UnitElectricResistance> {
         let mySelf = self as! Measurement<UnitElectricResistance>; return mySelf.converted(to: .microohms)}
 }
 
 public extension Measurement where UnitType: UnitElectricPotentialDifference {
     
-    public var toMegavolts: Measurement<UnitElectricPotentialDifference> {
+    var toMegavolts: Measurement<UnitElectricPotentialDifference> {
         let mySelf = self as! Measurement<UnitElectricPotentialDifference>; return mySelf.converted(to: .megavolts)}
     
-    public var toKilovolts: Measurement<UnitElectricPotentialDifference> {
+    var toKilovolts: Measurement<UnitElectricPotentialDifference> {
         let mySelf = self as! Measurement<UnitElectricPotentialDifference>; return mySelf.converted(to: .kilovolts)}
     
-    public var toVolts: Measurement<UnitElectricPotentialDifference> {
+    var toVolts: Measurement<UnitElectricPotentialDifference> {
         let mySelf = self as! Measurement<UnitElectricPotentialDifference>; return mySelf.converted(to: .volts)}
     
-    public var toMillivolts: Measurement<UnitElectricPotentialDifference> {
+    var toMillivolts: Measurement<UnitElectricPotentialDifference> {
         let mySelf = self as! Measurement<UnitElectricPotentialDifference>; return mySelf.converted(to: .millivolts)}
     
-    public var toMicrovolts: Measurement<UnitElectricPotentialDifference> {
+    var toMicrovolts: Measurement<UnitElectricPotentialDifference> {
         let mySelf = self as! Measurement<UnitElectricPotentialDifference>; return mySelf.converted(to: .microvolts)}
     
 }
 
 public extension Measurement where UnitType: UnitPower {
     
-    public var toTerawatts: Measurement<UnitPower> {
+    var toTerawatts: Measurement<UnitPower> {
         let mySelf = self as! Measurement<UnitPower>; return mySelf.converted(to: .terawatts)}
     
-    public var toGigawatts: Measurement<UnitPower> {
+    var toGigawatts: Measurement<UnitPower> {
         let mySelf = self as! Measurement<UnitPower>; return mySelf.converted(to: .gigawatts)}
     
-    public var toMegawatts: Measurement<UnitPower> {
+    var toMegawatts: Measurement<UnitPower> {
         let mySelf = self as! Measurement<UnitPower>; return mySelf.converted(to: .megawatts)}
     
-    public var toKilowatts: Measurement<UnitPower> {
+    var toKilowatts: Measurement<UnitPower> {
         let mySelf = self as! Measurement<UnitPower>; return mySelf.converted(to: .kilowatts)}
     
-    public var toWatts: Measurement<UnitPower> {
+    var toWatts: Measurement<UnitPower> {
         let mySelf = self as! Measurement<UnitPower>; return mySelf.converted(to: .watts)}
     
-    public var toMilliwatts: Measurement<UnitPower> {
+    var toMilliwatts: Measurement<UnitPower> {
         let mySelf = self as! Measurement<UnitPower>; return mySelf.converted(to: .milliwatts)}
     
-    public var toMicrowatts: Measurement<UnitPower> {
+    var toMicrowatts: Measurement<UnitPower> {
         let mySelf = self as! Measurement<UnitPower>; return mySelf.converted(to: .microwatts)}
     
-    public var toNanowatts: Measurement<UnitPower> {
+    var toNanowatts: Measurement<UnitPower> {
         let mySelf = self as! Measurement<UnitPower>; return mySelf.converted(to: .nanowatts)}
     
-    public var toPicowatts: Measurement<UnitPower> {
+    var toPicowatts: Measurement<UnitPower> {
         let mySelf = self as! Measurement<UnitPower>; return mySelf.converted(to: .picowatts)}
     
-    public var toFemtowatts: Measurement<UnitPower> {
+    var toFemtowatts: Measurement<UnitPower> {
         let mySelf = self as! Measurement<UnitPower>; return mySelf.converted(to: .femtowatts)}
     
-    public var toHorsepower: Measurement<UnitPower> {
+    var toHorsepower: Measurement<UnitPower> {
         let mySelf = self as! Measurement<UnitPower>; return mySelf.converted(to: .horsepower)}
 }
 
 public extension Measurement where UnitType: UnitElectricCharge {
     
-    public var toCoulombs: Measurement<UnitElectricCharge> {
+    var toCoulombs: Measurement<UnitElectricCharge> {
         let mySelf = self as! Measurement<UnitElectricCharge>; return mySelf.converted(to: .coulombs)}
     
-    public var toMegaampereHours: Measurement<UnitElectricCharge> {
+    var toMegaampereHours: Measurement<UnitElectricCharge> {
         let mySelf = self as! Measurement<UnitElectricCharge>; return mySelf.converted(to: .megaampereHours)}
     
-    public var toKiloampereHours: Measurement<UnitElectricCharge> {
+    var toKiloampereHours: Measurement<UnitElectricCharge> {
         let mySelf = self as! Measurement<UnitElectricCharge>; return mySelf.converted(to: .kiloampereHours)}
     
-    public var toAmpereHours: Measurement<UnitElectricCharge> {
+    var toAmpereHours: Measurement<UnitElectricCharge> {
         let mySelf = self as! Measurement<UnitElectricCharge>; return mySelf.converted(to: .ampereHours)}
     
-    public var toMilliampereHours: Measurement<UnitElectricCharge> {
+    var toMilliampereHours: Measurement<UnitElectricCharge> {
         let mySelf = self as! Measurement<UnitElectricCharge>; return mySelf.converted(to: .milliampereHours)}
     
-    public var toMicroampereHours: Measurement<UnitElectricCharge> {
+    var toMicroampereHours: Measurement<UnitElectricCharge> {
         let mySelf = self as! Measurement<UnitElectricCharge>; return mySelf.converted(to: .microampereHours)}
     
 }
