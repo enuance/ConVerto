@@ -32,6 +32,7 @@
 		205B2EEF210830CE006FF028 = {
 			isa = PBXGroup;
 			children = (
+				20F6849C23496F370014D0B2 /* Sources */,
 				205B2EFB210830CE006FF028 /* ConVerto */,
 				205B2EFA210830CE006FF028 /* Products */,
 			);
@@ -50,6 +51,21 @@
 			children = (
 				205B2EFC210830CE006FF028 /* ConVerto.h */,
 				205B2EFD210830CE006FF028 /* Info.plist */,
+			);
+			path = ConVerto;
+			sourceTree = "<group>";
+		};
+		20F6849C23496F370014D0B2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				20F6849D234971160014D0B2 /* ConVerto */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		20F6849D234971160014D0B2 /* ConVerto */ = {
+			isa = PBXGroup;
+			children = (
 				205B2F04210830F5006FF028 /* ConVerto.swift */,
 			);
 			path = ConVerto;
