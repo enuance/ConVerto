@@ -24,8 +24,5 @@ let package = Package(
         .target(
             name: "ConVerto",
             dependencies: []),
-        .testTarget(
-            name: "ConVertoTests",
-            dependencies: ["ConVerto"]),
     ]
 )
