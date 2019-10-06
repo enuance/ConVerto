@@ -115,6 +115,14 @@ ConVerto is available through [CocoaPods](http://cocoapods.org). To install it, 
 pod "ConVerto"
 ```
 
+#### Swift Package Manager
+
+ConVerto is also available through SPM. If you're using Xcode 11 or greater
+1. Navigate to the File menu
+2. Select Swift Packages
+3. Select Add Package Dependency...
+4. Enter `https://github.com/enuance/ConVerto`
+
 ## License
 
 ConVerto is published under the MIT license. See the LICENSE file for more info.
