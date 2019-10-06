@@ -58,9 +58,17 @@
 		20F6849C23496F370014D0B2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				205B2F04210830F5006FF028 /* ConVerto.swift */,
+				20F6849D234971160014D0B2 /* ConVerto */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		20F6849D234971160014D0B2 /* ConVerto */ = {
+			isa = PBXGroup;
+			children = (
+				205B2F04210830F5006FF028 /* ConVerto.swift */,
+			);
+			path = ConVerto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
